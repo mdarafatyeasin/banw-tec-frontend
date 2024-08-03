@@ -1,0 +1,146 @@
+/* Doctor.css */
+
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5; /* Light grey background for the whole page */
+    color: #333;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+/* Container Styles */
+.doctor-registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9ecef; /* Softer, more professional grey */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.doctor-registration-form {
+    max-width: 800px;
+    width: 100%;
+    background-color: #ffffff; /* White background for form */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Slightly darker shadow for depth */
+    box-sizing: border-box;
+}
+
+/* Title */
+.doctor-registration-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #212529; /* Dark grey color for the title */
+    font-weight: bold;
+}
+
+/* Input Styles */
+.doctor-input-box {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.doctor-input-box input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ced4da; /* Lighter border for input fields */
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.doctor-input-box input:focus {
+    border-color: #495057; /* Darker grey on focus */
+    outline: none;
+}
+
+/* Name Section Styles */
+.doctor-name-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Checkbox and Link */
+.doctor-remember-forgot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #495057;
+}
+
+.doctor-remember-forgot label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Button Styles */
+.doctor-registration-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #007bff; /* Bootstrap primary blue color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+.doctor-registration-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-3px);
+}
+
+/* Login Link */
+.doctor-login-link {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #495057;
+}
+
+.doctor-login-link a {
+    color: #007bff; /* Matching link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.doctor-login-link a:hover {
+    color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .doctor-registration-title {
+        font-size: 1.5rem;
+    }
+
+    .doctor-registration-form {
+        padding: 30px;
+    }
+
+    .doctor-input-box input {
+        font-size: 0.9rem;
+    }
+
+    .doctor-registration-button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .doctor-login-link {
+        font-size: 0.8rem;
+    }
+}

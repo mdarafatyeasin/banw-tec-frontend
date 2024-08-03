@@ -1,0 +1,28 @@
+.blog-container {
+    width: 100vw;
+    margin: 0;
+    padding: 20px;
+    background-image: url("../assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+
+
+.filter-container {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+
+#category-select {
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}

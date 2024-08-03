@@ -1,0 +1,121 @@
+/* SignupOption.css */
+
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef3f8; /* Light grey-blue background */
+    color: #333;
+    line-height: 1.6;
+}
+
+.signup-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6e8efb, #a777e3); /* Gradient background */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.signup-title {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.signup-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+.signup-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Wrap links on smaller screens */
+}
+
+/* Link Styles */
+.signup-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 15px 40px;
+    border-radius: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.signup-link .icon {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.signup-link.doctor {
+    background: linear-gradient(135deg, #ff7a18, #ff5e3a);
+    border: 1px solid #ff7a18;
+}
+
+.signup-link.patient {
+    background: linear-gradient(135deg, #28c6d6, #36d1dc);
+    border: 1px solid #28c6d6;
+}
+
+.signup-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.signup-link.doctor:hover {
+    background: linear-gradient(135deg, #ff7a18, #ff5e3a);
+    border-color: #ff7a18;
+}
+
+.signup-link.patient:hover {
+    background: linear-gradient(135deg, #28c6d6, #36d1dc);
+    border-color: #28c6d6;
+}
+
+.signup-link:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .signup-title {
+        font-size: 2.5rem;
+    }
+
+    .signup-subtitle {
+        font-size: 1rem;
+    }
+
+    .signup-link {
+        font-size: 1.2rem;
+        padding: 12px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .signup-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
